@@ -1,0 +1,44 @@
+href
+response.xpath('//p/a/@href')[0].extract()
+/Movie Scripts/A Few Good Men Script.html
+
+title
+response.xpath('//p/a/@title')[0].extract()
+A Few Good Men Script
+
+type
+response.xpath('//p/text()')[0].extract()
+(1991-07 Revised draft)
+
+writer
+response.xpath('//p/i/text()')[0].extract()
+Written by Aaron Sorkin
+
+
+---ENLACE DETALLE 1 (href)
+
+--IMSDb opinion
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/b[1]/text()').extract()
+IMSDb opinion
+
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/text()[2]').extract()
+\xa0\xa0None available
+
+--IMSDb rating
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/b[2]/text()').extract()
+IMSDb rating
+
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/text()[4]').extract()
+\xa0\xa0Not available
+
+--Average user rating
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/b[3]/text()').extract()
+Average user rating
+
+--Writers
+
+response.xpath('//table[@class="script-details"]/tr[2]/td[2]/b[4]/text()').extract()
+Writers
+
+--Genres
+
