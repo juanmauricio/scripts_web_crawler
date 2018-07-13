@@ -1,3 +1,12 @@
+
+get the list of urls starting with...
+scrapy shell http://www.imsdb.com/alphabetical/A
+
+response.selector.xpath('//*[@id="mainbody"]/table[2]/tbody/tr/td[3]/p[1]/a')
+
+
+
+
 href
 response.xpath('//p/a/@href')[0].extract()
 /Movie Scripts/A Few Good Men Script.html
@@ -41,4 +50,7 @@ response.xpath('//table[@class="script-details"]/tr[2]/td[2]/b[4]/text()').extra
 Writers
 
 --Genres
+ 
+ 
+
 
